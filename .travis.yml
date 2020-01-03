@@ -3,7 +3,7 @@ language:
 
 before_script:
   - cd plugin-code
-  - pip install --user codecov
+  - travis_wait pip install --user codecov
 
 after_success:
   - codecov
